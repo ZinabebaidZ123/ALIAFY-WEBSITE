@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+        <!-- fontawesome-link------------------------------------- -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+
+        <!-- google font for p ---------------------------- -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+   
+   <!-- inter font family --------------------------------------- -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap" rel="stylesheet">
+        <!-- bootstrap link-------------------------------------- -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- start nav-section --------------------------------------------- -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary  ">
+  <div class="button ">
+      <a href=""><img src="assets/images/menue-bar.png" alt=""></a>
+  </div>
+ 
+  <div class="container-fluid align-items-start">
+    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  
+      <img src="assets/images/menue-bar.png" alt="" class="navbar-toggler-icon">
+    </button>
+  
+     <div class="navbar-brand ">
+      <a class="" href="#">
+        <img src="assets/images/logo.png" alt="" class=""> <span>Aliafy</span>
+      </a>
+
+   
+     </div>
+   
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav  ms-auto w-75 ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"  onclick="changeActive(event)">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="experience.html"  onclick="changeActive(event)">Nos Expertises</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"  onclick="changeActive(event)">Nos Solutions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  href="contact.html "   onclick="changeActive(event)">Nous contacter</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <video id="myVideo" width="100%" >
+      <source src="assets/video.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+<!-- <div id="loader">
+  <video id="video"  class="video">
+    <source src="assets/video.mp4" type="video/mp4" >
+  </video>
+</div> -->
+  <!-- start banner-section --------------------------------- -->
+  <div class="banner">
+
+    <div class="banner-content  " class=" ">
+      <div class="img ">
+      <img src="assets/images/banner-content-img.png" alt="" class="">
+
+      <div class="content">
+        <h1>Aliafy</h1>
+        <p>L'énergie renouvelable, c'est l'énergie de demain.</p>
+        <a href="" class="btn">en savoir plus</a>
+      </div>
+      </div>
+    </div>
+
+    <div class="text">
+      <p>Aliafy</p>
+    </div>
+  </div>
+
+  <!-- start about-us-section ----------------------- -->
+
+<section class="about">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7"></div>
+      <div class="col-lg-5 ">
+        <h2 class="d-block ">À Propos de Nous</h2>
+        <div class="about-content d-flex align-items-center justify-content-between">
+         
+        <div class="brdr"></div>
+        <div class="box">
+          <p>Aliafy, votre partenaire de confiance dans la réduction des
+             dépenses énergétiques et la réhabilitation de votre bien.
+              Nous sommes déterminés à vous offrir une solution complète,
+               vous permettant de tirer pleinement parti des aides attribuées par
+             l'État, tout en minimisant votre reste à charge.</p>
+             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="img desktop-img">
+    <img src="assets/images/about-img.png" alt="">
+  </div>
+
+  <div class="img mob-img">
+    <img src="assets/images/about-img-mob.png" alt="">
+  </div>
+</section>
+
+<!-- start features section ---------------- -->
+<section class="features ">
+  <h2>Pourquoi nous</h2>
+  <div class = "container">
+     
+      <div class ="feat">
+          <img src="assets/images/ph_star.png">
+          <h3>Compétitivité</h3>
+          <p>Aliafy vous aide à financer vos travaux d'efficacité<br> énergétique grâce aux aides<br> de l'État.</p>                
+         </div>
+         <div class ="feat">
+          <img src="assets/images/ph_hand-fist.png">
+          <h3>Confiance et Expertise</h3>
+          <p>Aliafy vous aide à financer vos travaux d'efficacité<br> énergétique grâce aux aides<br> de l'État.</p>              
+         </div>
+         <div class ="feat">
+          <img src="assets/images/pepicons-pop_rewind-time.png">
+          <h3>Clef en Main</h3>
+          <p>Aliafy vous aide à financer vos travaux d'efficacité<br> énergétique grâce aux aides<br> de l'État.</p>                
+         </div>
+         <div class ="feat">
+          <img src="assets/images/ic_baseline-key.png">
+          <h3>Un Avenir Durable</h3>
+          <p>Aliafy vous aide à financer vos travaux d'efficacité<br> énergétique grâce aux aides<br> de l'État.</p>                
+         </div>
+      </div> </section>
+
+      <!-- start section num 4 engagement  ------------------------------- -->
+<section class="engagement">
+  <div class="container-fluid">
+
+    <h2>Notre Engagement</h2>
+       <div class="row  align-items-center">
+        <div class="col-lg-5 ">
+          <div class="engagement-img ">
+            <img src="assets/images/engagement-img.png" alt="" class="w-100">
+          </div>
+        </div>
+
+        <div class="col-lg-6 ">
+           <div class="engagement-content">
+                <div class="content">
+                  <h3>Votre Satisfaction Prioritaire</h3>
+
+                  <p>Votre satisfaction est notre priorité absolue. 
+                    Nous nous engageons à travailler sans relâche pour
+                     répondre à vos besoins et
+                     dépasser vos attentes à chaque étape du processus.</p>
+                </div>
+
+                <div class="content">
+                  <h3>Maximisation de Vos Avantages</h3>
+
+                  <p>Nous nous engageons
+                     à maximiser les avantages que vous pouvez tirer des Certificats 
+                     d'Économie d'Énergie (CEE). Notre équipe s'efforce constamment de
+                      trouver des opportunités pour réduire votre reste à 
+                    charge tout en améliorant l'efficacité énergétique de votre bien.
+                    </p>
+                </div>
+
+                <div class="content">
+                  <h3>Intégrité et Transparence</h3>
+                  <p>Nous sommes fiers de notre intégrité
+                     et de notre transparence. Nous vous fournirons
+                      des informations claires et précises sur les coûts,
+                       les avantages, et le processus de réhabilitation, de
+                        manière à ce que vous ayez une compréhension totale de 
+                        chaque étape, avec
+                     l'expertise de nos partenaires pour soutenir nos actions.
+                    </p>
+                </div>
+
+                <div class="content">
+                  <h3>Expertise Technique Inégalée</h3>
+                  <p>Notre équipe interne d'experts est composée de professionnels
+                     chevronnés dans le domaine de l'efficacité énergétique et des CEE.
+                      En collaboration étroite avec Synergy Consulting, nous nous engageons 
+                      à maintenir notre expertise à jour pour vous fournir les solutions
+                       les plus innovantes. Nous sommes passionnés par l'efficacité énergétique,
+                        c’est pourquoi nos équipes sont constamment à la pointe des dernières
+                         avancées technologiques 
+                    pour vous offrir des solutions
+                     de haute qualité et économiques.
+                    </p>
+                </div>
+           </div>
+        </div>
+       </div>
+  </div>
+</section>
+   
+<!-- start charge-section ------------------------------------------ -->
+<section class="charge  pb-0 mb-0 ">
+  <div class="container-fluid">
+    <div class="row justify-content-between ">
+      <div class="col-lg-7  ">
+       
+        <div class="circles d-flex  h-100   ">
+          <div class="first-circle  d-flex flex-column   justify-content-end h-100
+           ">
+           <img src="assets/images/first-circle.png" alt="" class="">
+          </div>
+          <div class="sec-circle   ">
+        <img src="assets/images/sec-circle.png" alt="" class="">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4  ">
+        <div class="charge-img ">
+          <img src="assets/images/charge-layer.png" alt="" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="waves  ">
+    <div class="first-wave w-100  ">
+      <img src="assets/images/left-text.png" alt="" class="left-text ">
+    <img src="assets/images/wave1.png" alt="" class="wave1 w-100 ">
+    </div>
+    <div class="sec-wave w-100 bg-danger ">
+      <img src="assets/images/right-text.png" alt="" class="right-text">
+    <img src="assets/images/wave2.png" alt="" class="wave2 w-100">
+    </div>
+  </div>
+</section>
+
+
+<section class="contact ">
+  <div class="container   ">
+    <div class="row  justify-content-between align-items-center  ">
+      <div class="col-lg-7 p-0  ">
+        <div class="contact-content  ">
+          <p>Nous sommes à votre écoute. </p>
+          <p>Contactez-nous dès maintenant.</p>
+    
+          <a href="" class="btn">CONTACT</a>
+        </div>
+      </div>
+
+      <div class="col-lg-5  p-0 ">
+        <div class="contact-img w-100   ">
+          <img src="assets/images/contact-img.png" alt="" class="w-100 desktop-img ">
+          <img src="assets/images/contact-img2.png" alt="" class=" mob-img">
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</section>
+
+ <!-- start footer-section ---------------- -->
+ <footer>
+  <div class="container">
+    <div class="row justify-content-between ">
+      <div class="col-lg-9">
+        <div class="row">
+    <div class="col-lg-3 logo-img">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="">
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="footer-links ">
+
+        <ul>
+          <h3>Pages</h3>
+          <li><a href="#">Accueil </a></li>
+          <li><a href="experience.html">Nos Expertises </a></li>
+          <li><a href="#">Nos Solutions</a></li>
+          <li><a href="contact.html">Nous contacter </a></li>
+          <!-- <li><a href="">Fonctionnalité</a></li>
+          <li><a href="">À Propos de nous</a></li>
+          <li><a href=""> Fonctionnalité</a></li>
+          <li><a href="">  Contact</a></li>
+          <li><a href=""> Conditions d'utilisation</a></li>
+          <li><a href="">  Conditions de confidentialité</a></li> -->
+        </ul>
+      </div>
+    </div>
+</div></div>
+    <div class="col-lg-3 ">
+      <div class="social-links w-100  ">
+        <div class="links w-100 d-flex justify-content-end">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom  text-center">
+    <p>Made By <span><a  href="#" onclick="window.location.href='https://www.Avnology.com'; return false;"><img src="assets//images/avn 1.png" alt=""></a></span></p>
+  </div>
+  </div>
+</footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+       AOS.init();
+     </script> 
+     <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
